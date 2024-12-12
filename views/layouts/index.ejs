@@ -213,7 +213,7 @@
               /></a>
             </section>
 
-            <section class="blur">
+            <!-- <section class="blur">
               <h2>
                 <span class="uline"
                   >テンプレートのご利用前に必ずお読み下さい</span
@@ -249,7 +249,7 @@
 
               <h3>当テンプレートの詳しい使い方は</h3>
               <p><a href="about">こちらをご覧下さい。</a></p>
-            </section>
+            </section> -->
           </div>
           <!--/.main-contents-->
 
@@ -264,134 +264,14 @@
     <!--/#container-->
 
     <%- include('../partials/gallery.ejs') %>
-
-    <div id="footer-contents">
-      <div class="left">
-        <h3>
-          <img src="images/logo3.png" alt="東京横浜サンプル医院" class="wl" />
-        </h3>
-        <p>
-          〒000-0000 東京足立区XXXXXX1丁目1号<br />
-          代表電話：000-0000-0000<br />
-          受付時間：月曜日から金曜日の8時から18時まで
-        </p>
-
-        <ul class="icons">
-          <li>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-line"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul>
-
-        <h3>診療時間</h3>
-        <table class="ta2">
-          <tr>
-            <th>&nbsp;</th>
-            <th>月</th>
-            <th>火</th>
-            <th>水</th>
-            <th>木</th>
-            <th>金</th>
-            <th>土</th>
-            <th>日</th>
-          </tr>
-          <tr>
-            <td>午前</td>
-            <td>○</td>
-            <td>○</td>
-            <td>○</td>
-            <td>○</td>
-            <td>○</td>
-            <td>○</td>
-            <td>ー</td>
-          </tr>
-          <tr>
-            <td>午後</td>
-            <td>○</td>
-            <td>○</td>
-            <td>○</td>
-            <td>○</td>
-            <td>○</td>
-            <td>ー</td>
-            <td>ー</td>
-          </tr>
-        </table>
-        <p class="mini">午前診療受付　8:30〜12:30　午後診療受付　2:30〜6:30</p>
-      </div>
-      <!--/.left-->
-
-      <div class="right">
-        <h3>アクセス</h3>
-        <p>
-          <a href="https://template-party.com/file/pickup_googlemap.html"
-            >GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a
-          >
-        </p>
-        <div class="iframe-box">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <!--/.right-->
-    </div>
+    <!-- footer1 -->
+    <%-include('../partials/mainfooter.ejs') %>
     <!--/#footer-contents-->
 
-    <div id="footermenu">
-      <ul>
-        <li class="title">メニュー見出し</li>
-        <li><a href="#">サンプルメニューサンプルメニュー</a></li>
-        <li><a href="#">サンプルメニュー</a></li>
-        <li><a href="#">サンプルメニュー</a></li>
-        <li><a href="#">サンプルメニュー</a></li>
-      </ul>
-      <ul>
-        <li class="title">メニュー見出し</li>
-        <li><a href="#">サンプルメニューサンプルメニュー</a></li>
-        <li><a href="#">サンプルメニュー</a></li>
-        <li><a href="#">サンプルメニュー</a></li>
-        <li><a href="#">サンプルメニュー</a></li>
-      </ul>
-      <ul>
-        <li class="title">メニュー見出し</li>
-        <li><a href="#">サンプルメニューサンプルメニュー</a></li>
-        <li><a href="#">サンプルメニュー</a></li>
-        <li><a href="#">サンプルメニュー</a></li>
-      </ul>
-      <ul>
-        <li class="title">メニュー見出し</li>
-        <li>
-          <a href="#"
-            >サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a
-          >
-        </li>
-        <li><a href="#">サンプルメニュー</a></li>
-      </ul>
-    </div>
+    <div id="footermenu"><%- include('../partials/footermenu.ejs',data) %></div>
     <!--/#footermenu-->
 
-    <footer>
-      <small
-        >Copyright&copy; <a href="index.html">東京横浜サンプル医院</a> All
-        Rights Reserved.</small
-      >
-      <span class="pr"
-        ><a href="https://template-party.com/" target="_blank"
-          >《Web Design:Template-Party》</a
-        ></span
-      >
-    </footer>
+    <%- include('../partials/footer.ejs') %>
 
     <!--ページの上部へ戻るボタン-->
     <div class="pagetop">
